@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Wishlist - Foodora SaaS</title>
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/global.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/animations.css" />
+  <link rel="stylesheet" href="../../css/restaurant.css" />
+  <link rel="stylesheet" href="../../css/dashboard.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div class="sidebar-header">
+        <a href="../../index.html" class="brand-logo">
+          <div class="brand-icon-box" style="width: 36px; height: 36px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <span style="font-size: 18px;">Foodora<strong>Customer</strong></span>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">My Account</div>
+        <a href="index.html" class="sidebar-link">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg><span>Overview</span></div>
+        </a>
+        <a href="orders.html" class="sidebar-link">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path></svg><span>My Orders</span></div>
+        </a>
+        <a href="favorites.html" class="sidebar-link active">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>Wishlist</span></div>
+        </a>
+        <a href="profile.html" class="sidebar-link">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span>Profile & Addresses</span></div>
+        </a>
+        <div class="sidebar-section-title">Navigation</div>
+        <a href="../../pages/restaurants.html" class="sidebar-link">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg><span>Browse Restaurants</span></div>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="btn btn-outline btn-block btn-sm text-danger" onclick="Auth.logout()">Sign Out</button>
+      </div>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="flex items-center gap-3">
+          <button class="mobile-nav-toggle" onclick="document.getElementById('dashboardSidebar').classList.toggle('show')">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="dashboard-title-box"><h1>My Saved Favorites ❤️</h1></div>
+        </div>
+        <div class="dashboard-top-actions">
+          <button class="theme-toggle-btn"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+          <a href="../../pages/restaurants.html" class="btn btn-primary btn-sm">Explore More</a>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <div class="mb-10">
+          <h2 class="text-xl font-bold mb-4">Saved Food Items</h2>
+          <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-6" id="favDishesGrid"></div>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold mb-4">Favorite Restaurants</h2>
+          <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-6" id="favRestaurantsGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/data.js"></script>
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/validation.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/app.js"></script>
+  <script src="../../js/products.js"></script>
+  <script src="../../js/restaurants.js"></script>
+  <script src="../../js/favorites.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Favorites.init();
+    });
+  </script>
+</body>
+</html>

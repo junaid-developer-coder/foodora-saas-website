@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Partner Portal - Foodora SaaS</title>
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/global.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/animations.css" />
+  <link rel="stylesheet" href="../../css/auth.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <!-- LEFT PANEL: ORANGE KITCHEN SHOWCASE -->
+    <div class="auth-panel-left" style="background: linear-gradient(135deg, #FF7518 0%, #D85507 100%);">
+      <div class="auth-decor-circle-1"></div>
+      <div class="auth-decor-circle-2"></div>
+      
+      <a href="../../index.html" class="auth-panel-brand">
+        <div class="brand-icon-box" style="background: #FFFFFF; color: var(--primary);">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+        </div>
+        <span>Foodora<strong>Partner Terminal</strong></span>
+      </a>
+
+      <div class="auth-hero-content">
+        <div class="auth-hero-badge" style="background: rgba(255,255,255,0.25); color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+          🍳 Kitchen Operations Terminal
+        </div>
+        <h1 class="auth-hero-title">Manage Your Kitchen, Menu & Daily Orders.</h1>
+        <p class="auth-hero-desc">
+          Accept live orders, print kitchen tickets, toggle food availability, and track your daily revenue performance effortlessly.
+        </p>
+
+        <div class="auth-floating-card">
+          <div style="font-size: 28px;">🥡</div>
+          <div>
+            <div style="font-weight: 700; font-size: 14px;">Kitchen Dispatch Status</div>
+            <div style="font-size: 12px; opacity: 0.85;">3 Orders Cooking • 1 Ready for Handover</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-panel-footer">
+        <span>Foodora Partner Suite • Kitchen Terminal</span>
+        <a href="../../index.html" style="color: #FFFFFF;">← Back to Main Site</a>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: LOGIN FORM -->
+    <div class="auth-panel-right">
+      <div class="auth-form-card">
+        <div class="auth-header">
+          <span class="badge badge-orange mb-2">Restaurant Partner Portal</span>
+          <h2 class="auth-title">Partner Sign In</h2>
+          <p class="auth-subtitle">Sign in to access your kitchen orders terminal and menu dispatch.</p>
+        </div>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label class="form-label" for="email">Partner Email</label>
+            <input type="email" id="email" class="form-input" placeholder="owner@foodora.com" required />
+            <div class="form-error"></div>
+          </div>
+
+          <div class="form-group mb-6">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" id="password" class="form-input" placeholder="Enter partner password" required />
+            <div class="form-error"></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">
+            Open Kitchen Terminal ➔
+          </button>
+        </form>
+
+        <div class="text-center mt-6 text-xs text-muted">
+          Looking for customer orders? <a href="../../login.html" class="text-primary font-bold">Customer Sign In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/data.js"></script>
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/validation.js"></script>
+  <script src="../../js/app.js"></script>
+  <script src="../../js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Foodora SaaS</title>
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/global.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/animations.css" />
+  <link rel="stylesheet" href="../../css/dashboard.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <!-- ADMIN SIDEBAR -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div class="sidebar-header">
+        <a href="../../index.html" class="brand-logo">
+          <div class="brand-icon-box" style="width: 36px; height: 36px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <span style="font-size: 18px;">Foodora<strong>Admin</strong></span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">Core Management</div>
+        <a href="index.html" class="sidebar-link active">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Overview</span>
+          </div>
+        </a>
+        <a href="restaurants.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            <span>Restaurants CRUD</span>
+          </div>
+        </a>
+        <a href="products.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <span>Food Products</span>
+          </div>
+        </a>
+        <a href="orders.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+            <span>Orders Dispatch</span>
+          </div>
+        </a>
+        <a href="categories.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect></svg>
+            <span>Categories</span>
+          </div>
+        </a>
+        <a href="customers.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Customers</span>
+          </div>
+        </a>
+        <a href="coupons.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line></svg>
+            <span>Coupons</span>
+          </div>
+        </a>
+        <a href="reviews.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Reviews</span>
+          </div>
+        </a>
+        <a href="settings.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Platform Settings</span>
+          </div>
+        </a>
+
+        <div class="sidebar-section-title">Portals</div>
+        <a href="../owner/index.html" class="sidebar-link">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg><span>Restaurant Kitchen</span></div>
+        </a>
+        <a href="../../index.html" class="sidebar-link">
+          <div class="sidebar-link-content"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span>Website Store</span></div>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="btn btn-outline btn-block btn-sm text-danger" onclick="Auth.logout()">Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- DASHBOARD MAIN -->
+    <div class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="flex items-center gap-3">
+          <button class="mobile-nav-toggle" onclick="document.getElementById('dashboardSidebar').classList.toggle('show')">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="dashboard-title-box">
+            <h1>Executive Management Console</h1>
+          </div>
+        </div>
+
+        <div class="dashboard-top-actions">
+          <button class="theme-toggle-btn" title="Toggle Theme">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <button class="btn btn-outline btn-sm text-danger" onclick="if(confirm('Restore all platform records back to standard defaults?')) { StorageManager.resetAllData(); location.reload(); }">
+            ↺ Restore Defaults
+          </button>
+          <button class="btn btn-primary btn-sm" onclick="Admin.exportOrdersCSV()">
+            📥 Export Orders CSV
+          </button>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <!-- 6 KPI Grid -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <span class="kpi-card-title">Gross Revenue</span>
+              <div class="kpi-card-icon" style="background: var(--color-success-light); color: var(--color-success);">💵</div>
+            </div>
+            <div class="kpi-val" id="adminStatRevenue">Rs. 0</div>
+            <div class="kpi-trend up">↑ 18.4% this week</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <span class="kpi-card-title">All Time Orders</span>
+              <div class="kpi-card-icon" style="background: var(--primary-light); color: var(--primary);">📦</div>
+            </div>
+            <div class="kpi-val" id="adminStatOrders">0</div>
+            <div class="kpi-trend up">Dispatched orders</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <span class="kpi-card-title">Active In-Flight</span>
+              <div class="kpi-card-icon" style="background: var(--color-warning-light); color: var(--color-warning);">🛵</div>
+            </div>
+            <div class="kpi-val" id="adminStatActive">0</div>
+            <div class="kpi-trend">Kitchen/Rider active</div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-card-header">
+              <span class="kpi-card-title">Restaurants</span>
+              <div class="kpi-card-icon" style="background: var(--color-info-light); color: var(--color-info);">🏪</div>
+            </div>
+            <div class="kpi-val" id="adminStatRestaurants">6</div>
+            <div class="kpi-trend up">Active partners</div>
+          </div>
+        </div>
+
+        <!-- Weekly Sales Analytics Chart -->
+        <div class="chart-box">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h2 class="text-base font-bold">Weekly Sales Revenue Analytics</h2>
+              <span class="text-xs text-muted">Daily breakdown of customer orders & revenue</span>
+            </div>
+            <span class="badge badge-success">● Live Metric Tracker</span>
+          </div>
+
+          <div class="chart-bars-wrap" id="adminRevenueChartBars"></div>
+        </div>
+
+        <!-- Master Orders Management Table -->
+        <div class="table-card">
+          <div class="table-card-header">
+            <div>
+              <h2 class="table-card-title">Recent Customer Orders</h2>
+              <span class="text-xs text-muted">Select status from dropdown to update delivery in real time</span>
+            </div>
+            <div class="flex gap-2">
+              <a href="orders.html" class="btn btn-outline btn-sm">Full Orders Table</a>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Order Ref</th>
+                  <th>Customer</th>
+                  <th>Restaurant</th>
+                  <th>Total</th>
+                  <th>Status Control</th>
+                  <th>Invoice</th>
+                </tr>
+              </thead>
+              <tbody id="adminOrdersTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/data.js"></script>
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/validation.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/app.js"></script>
+  <script src="../../js/orders.js"></script>
+  <script src="../../js/admin.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Admin.initDashboard();
+    });
+  </script>
+</body>
+</html>

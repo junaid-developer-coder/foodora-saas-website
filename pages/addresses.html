@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Addresses - Foodora SaaS</title>
+  <meta name="description" content="Add and manage your delivery addresses for quick ordering on Foodora SaaS." />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-logo">
+          <div class="brand-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <div class="brand-text">Foodora<span>SaaS</span></div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="restaurants.html" class="nav-link">Restaurants</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+          <a href="profile.html" class="nav-link active">Profile</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" title="Toggle Theme">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <a href="cart.html" class="header-cart-btn" title="Cart">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-badge" style="display: none;">0</span>
+          </a>
+          <div id="headerUserWrap"></div>
+          <button class="mobile-nav-toggle"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content py-8">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header mb-8">
+          <div class="section-tag">Address Book</div>
+          <h1 class="section-title">Saved Delivery Addresses</h1>
+          <p class="section-desc">Manage your home, office, and secondary delivery destinations.</p>
+        </div>
+
+        <div class="card p-6 mb-8" style="border-radius: var(--radius-2xl);">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-lg font-bold">Your Saved Locations</h2>
+            <button class="btn btn-primary btn-sm" onclick="promptAddAddress()">+ Add New Address</button>
+          </div>
+          <div id="profileAddressesList"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <div>© 2026 Foodora SaaS. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="profile.html">Profile</a>
+          <a href="orders.html">Orders</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/customer.js"></script>
+  <script>
+    function promptAddAddress() {
+      const title = prompt("Enter Label (e.g. Home, Office, Studio):", "Home");
+      if (!title) return;
+      const text = prompt("Enter Full Delivery Address:", "Phase 5, DHA, Lahore");
+      if (!text) return;
+      Customer.addNewAddress(title, text);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      Customer.renderAddressesManager();
+    });
+  </script>
+</body>
+</html>

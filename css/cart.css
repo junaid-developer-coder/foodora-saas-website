@@ -1,0 +1,171 @@
+/* ==========================================================================
+   FOODORA SAAS - CART STYLES (css/cart.css)
+   ========================================================================== */
+
+.cart-layout-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--space-8);
+  align-items: flex-start;
+  margin-bottom: var(--space-12);
+}
+
+.cart-items-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-xs);
+}
+
+.cart-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--space-4);
+}
+
+.cart-restaurant-banner {
+  background: var(--primary-light);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  color: var(--primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+.cart-item-row:last-child {
+  border-bottom: none;
+}
+.cart-item-img {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg-surface-secondary);
+}
+.cart-item-info {
+  flex: 1;
+}
+.cart-item-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 4px;
+}
+.cart-item-customs {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.cart-item-price {
+  font-weight: var(--font-weight-extrabold);
+  font-size: var(--font-size-base);
+  color: var(--text-main);
+}
+.cart-item-del-btn {
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+.cart-item-del-btn:hover {
+  color: var(--color-error);
+  background: var(--color-error-light);
+}
+
+/* Cart Summary Sidebar */
+.cart-summary-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+}
+.cart-summary-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.coupon-box {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+.coupon-input {
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--bg-surface-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-semibold);
+}
+
+.summary-calc-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.summary-calc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+.summary-calc-row.total-row {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-main);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-color);
+}
+.summary-calc-row.discount-row {
+  color: var(--color-success);
+}
+
+@media (max-width: 640px) {
+  .cart-items-panel {
+    padding: var(--space-4);
+  }
+  .cart-item-row {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .cart-item-img {
+    width: 56px;
+    height: 56px;
+  }
+  .cart-summary-card {
+    position: static;
+    padding: var(--space-4);
+  }
+  .coupon-box {
+    flex-direction: column;
+  }
+  .coupon-box .btn {
+    width: 100%;
+  }
+}

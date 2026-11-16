@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Support & FAQs - Foodora SaaS</title>
+  <meta name="description" content="Get in touch with Foodora SaaS customer care, submit support queries, or browse frequently asked questions." />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-logo">
+          <div class="brand-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <div class="brand-text">Foodora<span>SaaS</span></div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="restaurants.html" class="nav-link">Restaurants</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" title="Toggle Theme">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <a href="cart.html" class="header-cart-btn" title="Cart">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-badge" style="display: none;">0</span>
+          </a>
+          <div id="headerUserWrap"></div>
+          <button class="mobile-nav-toggle"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content py-10">
+      <div class="container">
+        <div class="section-header text-center" style="max-width: 600px; margin: 0 auto 3rem;">
+          <div class="section-tag">24/7 Customer Support</div>
+          <h1 class="section-title">We're Here to Help You</h1>
+          <p class="section-desc">Have questions about an ongoing order, delivery times, or partnering with us? Reach out anytime.</p>
+        </div>
+
+        <div class="grid grid-cols-1 grid-cols-2 gap-10 items-start mb-16">
+          <!-- Support Form -->
+          <div class="card p-8" style="border-radius: var(--radius-2xl);">
+            <h2 class="text-xl font-bold mb-4">Send Us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name <span class="required">*</span></label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Bilal Khan" required />
+              </div>
+
+              <div class="grid grid-cols-1 grid-cols-2 gap-4">
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="name@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactSubject">Subject</label>
+                  <select id="contactSubject" class="form-select">
+                    <option value="order">Order Issue / Delay</option>
+                    <option value="refund">Payment or Voucher</option>
+                    <option value="restaurant">Partner / Onboarding</option>
+                    <option value="general">General Inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Message Details <span class="required">*</span></label>
+                <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="How can our support team assist you today?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Support Channels & Info -->
+          <div>
+            <div class="card p-6 mb-6" style="border-radius: var(--radius-xl);">
+              <div class="flex items-start gap-4">
+                <div style="font-size: 28px;">📞</div>
+                <div>
+                  <h3 class="text-base font-bold">Customer Support Hotline</h3>
+                  <p class="text-xs text-muted mb-2">Available 24/7 for urgent delivery inquiries</p>
+                  <a href="tel:+9242111000000" class="text-primary font-extrabold text-lg">+92 (042) 111-FOODORA</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-6 mb-6" style="border-radius: var(--radius-xl);">
+              <div class="flex items-start gap-4">
+                <div style="font-size: 28px;">✉️</div>
+                <div>
+                  <h3 class="text-base font-bold">Email Support Desk</h3>
+                  <p class="text-xs text-muted mb-2">Typically answered within 15 minutes</p>
+                  <a href="mailto:support@foodora.com" class="text-primary font-bold">support@foodora.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-6" style="border-radius: var(--radius-xl);">
+              <div class="flex items-start gap-4">
+                <div style="font-size: 28px;">📍</div>
+                <div>
+                  <h3 class="text-base font-bold">Corporate Headquarters</h3>
+                  <p class="text-xs text-secondary mt-1">Level 5, Arfa Software Technology Park, Ferozepur Road, Lahore, Pakistan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="mt-12">
+          <div class="section-header text-center" style="max-width: 600px; margin: 0 auto 2.5rem;">
+            <div class="section-tag">Common Answers</div>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto;" class="flex flex-col gap-4">
+            <details class="card p-5" style="border-radius: var(--radius-lg); cursor: pointer;" open>
+              <summary class="font-bold text-base text-main">How does the 30-minute delivery promise work?</summary>
+              <p class="text-xs text-secondary mt-3 leading-relaxed">
+                When you place an order, our system assigns it directly to the nearest kitchen. While the chefs are preparing your dish, a nearby Foodora rider is automatically dispatched so your food is picked up fresh and delivered directly to your doorstep.
+              </p>
+            </details>
+
+            <details class="card p-5" style="border-radius: var(--radius-lg); cursor: pointer;">
+              <summary class="font-bold text-base text-main">What payment methods are supported?</summary>
+              <p class="text-xs text-secondary mt-3 leading-relaxed">
+                We accept Cash on Delivery (COD), JazzCash, Easypaisa, and all major Visa/Mastercard debit and credit cards.
+              </p>
+            </details>
+
+            <details class="card p-5" style="border-radius: var(--radius-lg); cursor: pointer;">
+              <summary class="font-bold text-base text-main">How do I apply promotional discount vouchers?</summary>
+              <p class="text-xs text-secondary mt-3 leading-relaxed">
+                Visit the <a href="offers.html" class="text-primary font-bold">Offers</a> page to copy active coupon codes like <strong>FOODORA50</strong> or <strong>FREEDEL</strong>. Paste them in the promo box on your Cart page and click Apply.
+              </p>
+            </details>
+
+            <details class="card p-5" style="border-radius: var(--radius-lg); cursor: pointer;">
+              <summary class="font-bold text-base text-main">Can I cancel my order after placing it?</summary>
+              <p class="text-xs text-secondary mt-3 leading-relaxed">
+                Yes! You can cancel orders immediately while in "Order Placed" or "Order Confirmed" status directly from the <a href="tracking.html" class="text-primary font-bold">Live Order Tracker</a> page.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <div>© 2026 Foodora SaaS. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          FoodoraApp.showToast("Your support ticket has been received! Ref #TK-" + Math.floor(1000 + Math.random() * 9000), "success");
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

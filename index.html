@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodora SaaS - Delicious Food Delivered Fresh & Fast</title>
+  <meta name="description" content="Order from the best restaurants near you. Fast delivery, fresh meals, pizzas, burgers, biryanis and gourmet treats with Foodora SaaS." />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="brand-text">Foodora<span>SaaS</span></div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="pages/restaurants.html" class="nav-link">Restaurants</a>
+          <a href="pages/categories.html" class="nav-link">Categories</a>
+          <a href="pages/offers.html" class="nav-link">Offers & Coupons</a>
+          <a href="pages/about.html" class="nav-link">About Us</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Global Search Form -->
+          <form class="header-search-form" style="display: flex;">
+            <div class="input-icon-wrap" style="width: 220px;">
+              <span class="input-icon-prefix">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </span>
+              <input type="text" class="form-input" style="padding-top: 8px; padding-bottom: 8px; border-radius: var(--radius-pill);" placeholder="Search food, dish..." />
+            </div>
+          </form>
+
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <!-- Cart Button -->
+          <a href="pages/cart.html" class="header-cart-btn" title="View Cart">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" style="display: none;">0</span>
+          </a>
+
+          <!-- User Menu / Sign In -->
+          <div id="headerUserWrap"></div>
+
+          <!-- Mobile Hamburger -->
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-drawer-backdrop"></div>
+    <aside class="mobile-drawer">
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <div class="brand-icon-box" style="width: 34px; height: 34px;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <span style="font-size: 18px;">Foodora</span>
+        </div>
+        <button class="drawer-close-btn" style="font-size: 24px; color: var(--text-muted);">&times;</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html" class="drawer-link active">🏠 Home</a>
+        <a href="pages/restaurants.html" class="drawer-link">🏪 Restaurants</a>
+        <a href="pages/categories.html" class="drawer-link">🍱 Categories</a>
+        <a href="pages/offers.html" class="drawer-link">🏷️ Offers & Deals</a>
+        <a href="pages/orders.html" class="drawer-link">📦 My Orders</a>
+        <a href="pages/favorites.html" class="drawer-link">❤️ Favorites</a>
+        <a href="pages/tracking.html" class="drawer-link">🛵 Live Tracker</a>
+        <a href="dashboard/customer/index.html" class="drawer-link">👤 Customer Dashboard</a>
+        <a href="dashboard/admin/index.html" class="drawer-link">⚙️ Admin Dashboard</a>
+        <a href="dashboard/owner/index.html" class="drawer-link">🍳 Restaurant Owner Portal</a>
+        <a href="pages/about.html" class="drawer-link">ℹ️ About Us</a>
+        <a href="pages/contact.html" class="drawer-link">📞 Contact Support</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- 1. HERO SECTION -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span>🔥 50% OFF on First Order</span>
+              <span>• Promo: FOODORA50</span>
+            </div>
+            <h1 class="hero-title">
+              Your Favorite Food, Delivered <span>Fresh & Fast.</span>
+            </h1>
+            <p class="hero-desc">
+              Discover top-rated restaurants, sizzling hot gourmet burgers, cheesy crust pizzas, traditional aromatic biryanis, and delicious treats delivered to your door in 30 minutes.
+            </p>
+
+            <!-- Hero Delivery Search -->
+            <form action="pages/restaurants.html" method="GET" class="hero-search-box">
+              <span class="hero-location-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <input type="text" name="q" class="hero-search-input" placeholder="Enter your delivery address or dish (e.g. Lahore, Burgers)..." />
+              <button type="submit" class="btn btn-primary hero-search-btn">
+                Find Food ➔
+              </button>
+            </form>
+
+            <!-- Quick Search Tags -->
+            <div class="hero-quick-tags">
+              <span>Popular Now:</span>
+              <a href="pages/restaurants.html?category=cat_burgers" class="hero-tag-chip">Double Smash</a>
+              <a href="pages/restaurants.html?category=cat_biryani" class="hero-tag-chip">Mutton Biryani</a>
+              <a href="pages/restaurants.html?category=cat_pizza" class="hero-tag-chip">Stuffed Crust</a>
+              <a href="pages/restaurants.html?category=cat_bbq" class="hero-tag-chip">Reshmi Kabab</a>
+            </div>
+          </div>
+
+          <!-- Hero Visual & Floating Graphics -->
+          <div class="hero-visual">
+            <div class="hero-img-wrap">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Delicious Burger" class="hero-main-img" />
+            </div>
+
+            <!-- Floating Card 1: Rating -->
+            <div class="hero-float-badge-1">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #FFF8E6; color: #F59E0B; display: flex; align-items: center; justify-content: center; font-size: 18px;">
+                ★
+              </div>
+              <div>
+                <div class="font-extrabold text-sm text-main">4.9 Star Rating</div>
+                <div class="text-xs text-muted">Over 10,000+ happy foodies</div>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: Fast Delivery -->
+            <div class="hero-float-badge-2">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 18px;">
+                ⏱
+              </div>
+              <div>
+                <div class="font-extrabold text-sm text-main">25-30 Mins</div>
+                <div class="text-xs text-muted">Guaranteed fast delivery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. POPULAR CATEGORIES -->
+      <section class="categories-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Explore Varieties</div>
+            <div class="section-title-wrap">
+              <div>
+                <h2 class="section-title">Popular Food Categories</h2>
+                <p class="section-desc">Browse cuisines crafted to satisfy every single craving.</p>
+              </div>
+              <a href="pages/categories.html" class="section-link">View All Categories ➔</a>
+            </div>
+          </div>
+
+          <div class="categories-grid" id="homeCategoriesGrid">
+            <!-- Rendered by JS or static fallback -->
+            <a href="pages/restaurants.html?category=cat_burgers" class="category-card">
+              <div class="category-icon-box">🍔</div>
+              <span class="category-title">Burgers</span>
+              <span class="category-count">24 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_pizza" class="category-card">
+              <div class="category-icon-box">🍕</div>
+              <span class="category-title">Pizza</span>
+              <span class="category-count">18 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_biryani" class="category-card">
+              <div class="category-icon-box">🍚</div>
+              <span class="category-title">Biryani</span>
+              <span class="category-count">15 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_bbq" class="category-card">
+              <div class="category-icon-box">🍢</div>
+              <span class="category-title">BBQ & Grills</span>
+              <span class="category-count">19 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_chinese" class="category-card">
+              <div class="category-icon-box">🥡</div>
+              <span class="category-title">Chinese</span>
+              <span class="category-count">14 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_fastfood" class="category-card">
+              <div class="category-icon-box">🍟</div>
+              <span class="category-title">Fast Food</span>
+              <span class="category-count">32 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_desserts" class="category-card">
+              <div class="category-icon-box">🍰</div>
+              <span class="category-title">Desserts</span>
+              <span class="category-count">12 Items</span>
+            </a>
+            <a href="pages/restaurants.html?category=cat_drinks" class="category-card">
+              <div class="category-icon-box">🥤</div>
+              <span class="category-title">Drinks</span>
+              <span class="category-count">16 Items</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. PROMOTIONAL DISCOUNT BANNERS -->
+      <section class="promo-banners-section">
+        <div class="container promo-grid">
+          <div class="promo-card promo-card-1">
+            <span class="promo-badge-tag">MEGA PROMO</span>
+            <h3 class="promo-title">50% OFF Delicious Meals</h3>
+            <p class="promo-desc">Use coupon code <strong>FOODORA50</strong> at checkout for up to Rs. 400 discount.</p>
+            <div>
+              <a href="pages/offers.html" class="btn btn-dark btn-sm">Claim Voucher</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Pizza Promo" class="promo-card-img" />
+          </div>
+
+          <div class="promo-card promo-card-2">
+            <span class="promo-badge-tag" style="background: rgba(255,117,24,0.3); color: #FF7518;">FREE DELIVERY</span>
+            <h3 class="promo-title">Free Express Delivery</h3>
+            <p class="promo-desc">Order above Rs. 1,500 and enjoy zero delivery charges automatically!</p>
+            <div>
+              <a href="pages/restaurants.html" class="btn btn-primary btn-sm">Order Now</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80" alt="Biryani Promo" class="promo-card-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. POPULAR RESTAURANTS -->
+      <section class="py-12">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Top Partners</div>
+            <div class="section-title-wrap">
+              <div>
+                <h2 class="section-title">Popular Restaurants Nearby</h2>
+                <p class="section-desc">Hand-picked verified dining spots with top customer hygiene and rating scores.</p>
+              </div>
+              <a href="pages/restaurants.html" class="section-link">Explore All Restaurants ➔</a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-6" id="homeRestaurantsGrid">
+            <!-- Injected by script below -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. RECOMMENDED FOOD DISHES -->
+      <section class="py-12" style="background: var(--bg-surface);">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Chef's Picks</div>
+            <div class="section-title-wrap">
+              <div>
+                <h2 class="section-title">Trending Dishes This Week</h2>
+                <p class="section-desc">Most ordered favorites loved by thousands of local foodies.</p>
+              </div>
+              <a href="pages/restaurants.html" class="section-link">View Full Menu ➔</a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 grid-cols-2 grid-cols-4 gap-6" id="homeProductsGrid">
+            <!-- Injected by script below -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. HOW IT WORKS -->
+      <section class="how-it-works-section">
+        <div class="container">
+          <div class="section-header text-center" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+            <div class="section-tag">Easy Ordering</div>
+            <h2 class="section-title">How Foodora Works</h2>
+            <p class="section-desc">Experience seamless online food ordering in 3 simple steps.</p>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <span class="step-number">01</span>
+              <div class="step-icon-wrap">📍</div>
+              <h3 class="step-title">Choose Location & Dish</h3>
+              <p class="step-desc">Enter your delivery address and browse menus from hundreds of top-rated local eateries.</p>
+            </div>
+
+            <div class="step-card">
+              <span class="step-number">02</span>
+              <div class="step-icon-wrap">🍳</div>
+              <h3 class="step-title">Fresh Kitchen Prep</h3>
+              <p class="step-desc">Chefs prepare your meal using premium fresh ingredients as soon as you confirm order.</p>
+            </div>
+
+            <div class="step-card">
+              <span class="step-number">03</span>
+              <div class="step-icon-wrap">🛵</div>
+              <h3 class="step-title">Speedy Doorstep Delivery</h3>
+              <p class="step-desc">Track our delivery rider on the live map until your meal arrives hot, fresh and on time.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. PLATFORM STATS -->
+      <section class="stats-section">
+        <div class="container stats-grid">
+          <div>
+            <div class="stat-box-val">500+</div>
+            <div class="stat-box-label">Verified Restaurants</div>
+          </div>
+          <div>
+            <div class="stat-box-val">120k+</div>
+            <div class="stat-box-label">Successful Deliveries</div>
+          </div>
+          <div>
+            <div class="stat-box-val">4.9 ★</div>
+            <div class="stat-box-label">App Store Rating</div>
+          </div>
+          <div>
+            <div class="stat-box-val">28 min</div>
+            <div class="stat-box-label">Average Delivery Time</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. APP PROMOTION BANNER -->
+      <section class="app-promo-section">
+        <div class="container">
+          <div class="app-promo-card">
+            <div>
+              <span class="badge badge-orange mb-3">Mobile Convenience</span>
+              <h2 class="text-3xl font-extrabold mb-3">Order On-The-Go With The Foodora App</h2>
+              <p class="text-secondary mb-6">
+                Download the Foodora mobile application for exclusive app-only promo vouchers, live GPS rider tracking, and re-order with a single tap.
+              </p>
+              <div class="app-store-btns">
+                <a href="#download" class="app-store-btn" onclick="FoodoraApp.showToast('Foodora Mobile App is launching soon on iOS and Android!', 'info')">
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.91-1 .04-2.18.66-2.88 1.48-.56.65-.99 1.74-.86 2.79 1.12.09 2.22-.57 2.8-1.36z"/></svg>
+                  <div>
+                    <div style="font-size: 10px; line-height: 1;">Download on the</div>
+                    <div style="font-size: 14px; font-weight: bold;">Apple App Store</div>
+                  </div>
+                </a>
+                <a href="#download" class="app-store-btn" onclick="FoodoraApp.showToast('Foodora Mobile App is launching soon on iOS and Android!', 'info')">
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.94 1.94 0 0 1-.365-1.122V2.936c0-.424.135-.817.364-1.122zm11.236 11.236L17.5 15.7l-12.032 6.946 9.377-9.596zm0-2.1L5.468 1.354 17.5 8.3 14.845 10.95zm1.48 1.05l3.882 2.241c.88.508.88 1.332 0 1.84l-3.882 2.242-2.327-2.327 2.327-2.326z"/></svg>
+                  <div>
+                    <div style="font-size: 10px; line-height: 1;">GET IT ON</div>
+                    <div style="font-size: 14px; font-weight: bold;">Google Play Store</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="app-promo-mockup">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80" alt="App Preview" style="border-radius: var(--radius-2xl); box-shadow: var(--shadow-xl); border: 4px solid var(--bg-surface);" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Col 1: Brand -->
+          <div class="footer-brand-col">
+            <div class="brand-logo mb-3">
+              <div class="brand-icon-box">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+              </div>
+              <span class="font-extrabold text-xl">Foodora<span>SaaS</span></span>
+            </div>
+            <p>
+              Pakistan's modern SaaS food delivery platform. Discover top restaurants, order gourmet dishes, and enjoy fast doorstep delivery.
+            </p>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-btn" aria-label="Facebook">f</a>
+              <a href="#" class="footer-social-btn" aria-label="Twitter">t</a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram">in</a>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div>
+            <h4 class="footer-heading">Explore</h4>
+            <div class="footer-nav-list">
+              <a href="index.html" class="footer-nav-link">Home</a>
+              <a href="pages/restaurants.html" class="footer-nav-link">Restaurants</a>
+              <a href="pages/categories.html" class="footer-nav-link">Categories</a>
+              <a href="pages/offers.html" class="footer-nav-link">Promo Offers</a>
+              <a href="pages/about.html" class="footer-nav-link">About Us</a>
+            </div>
+          </div>
+
+          <!-- Col 3: Customer -->
+          <div>
+            <h4 class="footer-heading">Customer</h4>
+            <div class="footer-nav-list">
+              <a href="pages/cart.html" class="footer-nav-link">My Cart</a>
+              <a href="pages/orders.html" class="footer-nav-link">Order History</a>
+              <a href="pages/tracking.html" class="footer-nav-link">Order Tracking</a>
+              <a href="pages/favorites.html" class="footer-nav-link">Favorites</a>
+              <a href="dashboard/customer/index.html" class="footer-nav-link">User Dashboard</a>
+            </div>
+          </div>
+
+          <!-- Col 4: Business / SaaS -->
+          <div>
+            <h4 class="footer-heading">Partners</h4>
+            <div class="footer-nav-list">
+              <a href="dashboard/owner/login.html" class="footer-nav-link">Restaurant Portal</a>
+              <a href="dashboard/admin/login.html" class="footer-nav-link">Admin Dashboard</a>
+              <a href="pages/contact.html" class="footer-nav-link">Partner With Us</a>
+              <a href="pages/terms.html" class="footer-nav-link">Terms & Policy</a>
+              <a href="pages/privacy.html" class="footer-nav-link">Privacy Policy</a>
+            </div>
+          </div>
+
+          <!-- Col 5: Newsletter -->
+          <div>
+            <h4 class="footer-heading">Get 20% Off</h4>
+            <p class="text-xs text-secondary mb-3">Subscribe for weekly secret menu discount promo codes.</p>
+            <form class="newsletter-form">
+              <div class="newsletter-input-wrap">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required />
+                <button type="submit" class="btn btn-primary btn-sm">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Foodora SaaS. All rights reserved. Built with Pure HTML5, CSS3, & Vanilla JavaScript.
+          </div>
+          <div class="footer-bottom-links">
+            <a href="pages/privacy.html">Privacy</a>
+            <a href="pages/terms.html">Terms</a>
+            <a href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+      <div class="mobile-bottom-nav-inner">
+        <a href="index.html" class="mobile-bottom-item active">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span>Home</span>
+        </a>
+        <a href="pages/restaurants.html" class="mobile-bottom-item">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          <span>Explore</span>
+        </a>
+        <a href="pages/cart.html" class="mobile-bottom-item">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>Cart</span>
+          <span class="mobile-bottom-badge mobile-cart-badge" style="display: none;">0</span>
+        </a>
+        <a href="pages/orders.html" class="mobile-bottom-item">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          <span>Orders</span>
+        </a>
+        <a href="dashboard/customer/index.html" class="mobile-bottom-item">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Profile</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/restaurants.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Inject Featured Restaurants into Home
+      const restGrid = document.getElementById("homeRestaurantsGrid");
+      if (restGrid) {
+        const list = StorageManager.getRestaurants().slice(0, 3);
+        restGrid.innerHTML = list.map(r => Restaurants.renderCard(r, false)).join("");
+      }
+
+      // Inject Recommended Products into Home
+      const prodGrid = document.getElementById("homeProductsGrid");
+      if (prodGrid) {
+        const prods = StorageManager.getProducts().slice(0, 8);
+        prodGrid.innerHTML = prods.map(p => Products.renderCard(p, false)).join("");
+      }
+    });
+  </script>
+</body>
+</html>

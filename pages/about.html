@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Foodora SaaS</title>
+  <meta name="description" content="Learn about Foodora SaaS, our mission to deliver gourmet meals fresh and fast, and our team." />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-logo">
+          <div class="brand-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <div class="brand-text">Foodora<span>SaaS</span></div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="restaurants.html" class="nav-link">Restaurants</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="offers.html" class="nav-link">Offers</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" title="Toggle Theme">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <a href="cart.html" class="header-cart-btn" title="Cart">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-badge" style="display: none;">0</span>
+          </a>
+          <div id="headerUserWrap"></div>
+          <button class="mobile-nav-toggle"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content py-12">
+      <div class="container">
+        <!-- Hero Story -->
+        <div class="grid grid-cols-1 grid-cols-2 gap-10 items-center mb-16">
+          <div>
+            <span class="section-tag">Our Story</span>
+            <h1 class="text-4xl font-extrabold mb-4">Empowering Foodies & Local Restaurants</h1>
+            <p class="text-secondary mb-4 leading-relaxed">
+              Foodora SaaS was founded with a singular ambition: to bridge hungry food lovers with exceptional local culinary talents. We believe that ordering gourmet meals should be effortless, rapid, and delightful.
+            </p>
+            <p class="text-secondary mb-6 leading-relaxed">
+              From hand-crafted smash burgers to slow-dum biryanis and authentic wood-fired pizzas, our verified restaurant network ensures every bite arrives steaming hot and full of authentic flavor.
+            </p>
+            <div class="flex gap-4">
+              <a href="restaurants.html" class="btn btn-primary">Discover Food</a>
+              <a href="contact.html" class="btn btn-outline">Partner With Us</a>
+            </div>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Restaurant Interior" style="border-radius: var(--radius-2xl); box-shadow: var(--shadow-xl);" />
+          </div>
+        </div>
+
+        <!-- Mission & Values Grid -->
+        <div class="section-header text-center" style="max-width: 600px; margin: 0 auto 3rem;">
+          <div class="section-tag">Core Principles</div>
+          <h2 class="section-title">What Drives Foodora</h2>
+          <p class="section-desc">Our commitment to quality, speed, and community partnerships.</p>
+        </div>
+
+        <div class="grid grid-cols-1 grid-cols-3 gap-8 mb-16">
+          <div class="card p-6 text-center" style="border-radius: var(--radius-2xl);">
+            <div style="font-size: 36px; margin-bottom: var(--space-3);">🥇</div>
+            <h3 class="text-lg font-bold mb-2">Uncompromising Quality</h3>
+            <p class="text-xs text-secondary leading-relaxed">We audit every restaurant partner for top hygiene ratings, premium ingredient sourcing, and culinary consistency.</p>
+          </div>
+
+          <div class="card p-6 text-center" style="border-radius: var(--radius-2xl);">
+            <div style="font-size: 36px; margin-bottom: var(--space-3);">⚡</div>
+            <h3 class="text-lg font-bold mb-2">30-Minute Delivery Guarantee</h3>
+            <p class="text-xs text-secondary leading-relaxed">Our intelligent rider dispatch algorithm ensures direct delivery from hot kitchen stoves right to your doorstep.</p>
+          </div>
+
+          <div class="card p-6 text-center" style="border-radius: var(--radius-2xl);">
+            <div style="font-size: 36px; margin-bottom: var(--space-3);">🤝</div>
+            <h3 class="text-lg font-bold mb-2">Empowering Local Chefs</h3>
+            <p class="text-xs text-secondary leading-relaxed">We provide cutting-edge digital menus, kitchen order management systems, and transparent analytics to grow local food businesses.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <div>© 2026 Foodora SaaS. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

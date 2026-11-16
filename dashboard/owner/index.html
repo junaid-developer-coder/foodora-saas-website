@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchen Terminal - Restaurant Owner Dashboard - Foodora SaaS</title>
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/global.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/animations.css" />
+  <link rel="stylesheet" href="../../css/dashboard.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <!-- OWNER SIDEBAR -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div class="sidebar-header">
+        <a href="../../index.html" class="brand-logo">
+          <div class="brand-icon-box" style="width: 36px; height: 36px; background: var(--primary);">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+          </div>
+          <span style="font-size: 18px;">Foodora<strong>Partner</strong></span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">Kitchen Terminal</div>
+        <a href="index.html" class="sidebar-link active">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Kitchen Overview</span>
+          </div>
+        </a>
+        <a href="orders.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+            <span>Orders Dispatch</span>
+          </div>
+        </a>
+        <a href="menu.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <span>Menu & Dishes</span>
+          </div>
+        </a>
+        <a href="analytics.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <span>Sales Analytics</span>
+          </div>
+        </a>
+        <a href="settings.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Store Settings & Hours</span>
+          </div>
+        </a>
+
+        <div class="sidebar-section-title mt-6">Quick Links</div>
+        <a href="../../index.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            <span>Customer Website</span>
+          </div>
+        </a>
+        <a href="../admin/index.html" class="sidebar-link">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
+            <span>Admin Console</span>
+          </div>
+        </a>
+        <a href="#" class="sidebar-link text-danger" onclick="Auth.logout()">
+          <div class="sidebar-link-content">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            <span>Sign Out</span>
+          </div>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="dashboard-main">
+      <!-- TOPBAR -->
+      <header class="dashboard-topbar">
+        <div class="flex items-center gap-3">
+          <button class="mobile-sidebar-toggle" onclick="FoodoraApp.toggleMobileSidebar()">☰</button>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-muted uppercase">Terminal:</span>
+            <select id="ownerRestaurantSelector" class="form-input text-xs font-bold py-1 px-3" style="width: auto; min-width: 180px;"></select>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <!-- ONLINE / OFFLINE TOGGLE -->
+          <div class="flex items-center gap-2 bg-light px-3 py-1 rounded" style="background: var(--bg-light); border: 1px solid var(--border-color);">
+            <label class="switch-label text-xs font-bold" for="ownerStoreStatusCheckbox" style="cursor: pointer;">
+              <input type="checkbox" id="ownerStoreStatusCheckbox" checked style="accent-color: var(--success); width: 16px; height: 16px; vertical-align: middle;" />
+              <span id="ownerStoreStatusBadge" class="badge badge-success ml-2">ONLINE</span>
+            </label>
+          </div>
+
+          <button class="theme-toggle-btn" onclick="FoodoraApp.toggleTheme()" title="Toggle Dark/Light Mode">🌙</button>
+
+          <div class="user-badge flex items-center gap-2">
+            <div style="width: 34px; height: 34px; border-radius: var(--radius-full); background: var(--primary); color: white; display: grid; place-items: center; font-weight: bold; font-size: 13px;">👨‍🍳</div>
+            <div class="text-xs">
+              <div class="font-bold">Head Chef / Owner</div>
+              <div class="text-muted" style="font-size: 10px;">Partner Tier</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- BODY CONTENT -->
+      <div class="dashboard-content p-6">
+        <!-- WELCOME BANNER -->
+        <div class="card p-6 mb-6" style="background: linear-gradient(135deg, var(--card-bg) 0%, var(--primary-light) 100%); border-left: 5px solid var(--primary);">
+          <div class="flex justify-between items-center flex-wrap gap-4">
+            <div>
+              <span class="badge badge-orange mb-2">Live Kitchen Operations</span>
+              <h1 class="text-2xl font-bold" id="ownerRestaurantTitle">Burger Lab Gourmet - Kitchen Terminal</h1>
+              <p class="text-sm text-muted mt-1">Real-time order ticket dispatch, kitchen prep queue, and availability controls.</p>
+            </div>
+            <div class="flex gap-2">
+              <a href="orders.html" class="btn btn-outline btn-sm">All Orders</a>
+              <a href="menu.html" class="btn btn-primary btn-sm">+ Add / Edit Dishes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI METRICS ROW -->
+        <div class="grid grid-4 gap-4 mb-6">
+          <div class="card p-4">
+            <div class="text-xs text-muted uppercase font-bold mb-1">Today's Orders</div>
+            <div class="text-3xl font-bold text-primary" id="ownerTodayOrders">0</div>
+            <div class="text-xs text-muted mt-1">Incoming & completed</div>
+          </div>
+          <div class="card p-4">
+            <div class="text-xs text-muted uppercase font-bold mb-1">Today's Kitchen Revenue</div>
+            <div class="text-3xl font-bold" id="ownerTodaySales">Rs. 0</div>
+            <div class="text-xs text-success mt-1">↑ Verified orders</div>
+          </div>
+          <div class="card p-4">
+            <div class="text-xs text-muted uppercase font-bold mb-1">Avg Preparation Time</div>
+            <div class="text-3xl font-bold" id="ownerPrepTime">25-30 min</div>
+            <div class="text-xs text-muted mt-1">Target kitchen cadence</div>
+          </div>
+          <div class="card p-4">
+            <div class="text-xs text-muted uppercase font-bold mb-1">Customer Rating</div>
+            <div class="text-3xl font-bold text-warning" id="ownerRating">★ 4.8</div>
+            <div class="text-xs text-muted mt-1">Top rated kitchen</div>
+          </div>
+        </div>
+
+        <!-- MAIN TWO COLUMN WORKSPACE -->
+        <div class="grid grid-3 gap-6" style="grid-template-columns: 2fr 1fr;">
+          <!-- LEFT 2 COLS: ACTIVE KITCHEN ORDER TICKETS -->
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <div class="flex items-center gap-2">
+                <h2 class="text-lg font-bold">Live Kitchen Queue</h2>
+                <span class="badge badge-orange font-bold" id="ownerActiveQueueCount">0</span>
+              </div>
+              <a href="orders.html" class="text-xs text-primary font-bold">View Full Order History →</a>
+            </div>
+
+            <!-- CONTAINER FOR ACTIVE TICKETS -->
+            <div id="ownerKitchenOrdersQueue"></div>
+          </div>
+
+          <!-- RIGHT 1 COL: QUICK RESTAURANT TOOLS & ACTIONS -->
+          <div>
+            <!-- STORE STATUS SUMMARY -->
+            <div class="card p-5 mb-6">
+              <h3 class="font-bold text-base mb-3">Kitchen Quick Actions</h3>
+              <div class="flex flex-col gap-3">
+                <a href="menu.html" class="btn btn-outline btn-block text-left flex justify-between items-center text-sm">
+                  <span>🍽️ Manage Menu Items</span>
+                  <span>➔</span>
+                </a>
+                <a href="analytics.html" class="btn btn-outline btn-block text-left flex justify-between items-center text-sm">
+                  <span>📊 View Sales Analytics</span>
+                  <span>➔</span>
+                </a>
+                <a href="settings.html" class="btn btn-outline btn-block text-left flex justify-between items-center text-sm">
+                  <span>⚙️ Store Profile & Hours</span>
+                  <span>➔</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- TIPS CARD -->
+            <div class="card p-5" style="background: var(--bg-light); border: 1px dashed var(--border-color);">
+              <div class="font-bold text-sm text-primary mb-2">💡 Kitchen Dispatch Tips</div>
+              <ul class="text-xs text-muted" style="line-height: 1.6; padding-left: 18px;">
+                <li>Click <strong>Cooking</strong> when chef begins food prep.</li>
+                <li>Click <strong>Packed</strong> when bagged with cutlery.</li>
+                <li>Click <strong>Handover</strong> when given to rider.</li>
+                <li>Use <strong>Print Ticket</strong> for thermal kitchen printout.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/data.js"></script>
+  <script src="../../js/storage.js"></script>
+  <script src="../../js/validation.js"></script>
+  <script src="../../js/auth.js"></script>
+  <script src="../../js/app.js"></script>
+  <script src="../../js/orders.js"></script>
+  <script src="../../js/owner.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Owner.initDashboard();
+    });
+  </script>
+</body>
+</html>

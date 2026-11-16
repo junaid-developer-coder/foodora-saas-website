@@ -1,0 +1,256 @@
+/* ==========================================================================
+   FOODORA SAAS - AUTHENTICATION PAGES (css/auth.css)
+   ========================================================================== */
+
+.auth-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg-surface);
+}
+
+/* --------------------------------------------------------------------------
+   LEFT SHOWCASE PANEL (ORANGE)
+   -------------------------------------------------------------------------- */
+.auth-panel-left {
+  flex: 1.1;
+  background: var(--primary-gradient);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-12) var(--space-12);
+  color: #FFFFFF;
+}
+
+/* Decorative circles and blurred shapes */
+.auth-decor-circle-1 {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  border-radius: var(--radius-pill);
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+  pointer-events: none;
+}
+.auth-decor-circle-2 {
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: var(--radius-pill);
+  background: radial-gradient(circle, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+}
+
+/* Left Panel Header */
+.auth-panel-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  color: #FFFFFF;
+  z-index: 2;
+  text-decoration: none;
+}
+.auth-brand-badge {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+}
+
+/* Central Hero Showcase */
+.auth-hero-content {
+  position: relative;
+  z-index: 2;
+  margin: auto 0;
+  max-width: 540px;
+}
+.auth-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.auth-hero-title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1.15;
+  color: #FFFFFF;
+  margin-bottom: var(--space-4);
+}
+.auth-hero-desc {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+}
+
+/* Visual Food Graphic & Floating Cards */
+.auth-visual-stage {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 280px;
+  margin: 0 auto;
+}
+.auth-main-food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Floating Card 1: Top Left Rating */
+.auth-float-card-1 {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 10px 16px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  color: var(--text-main);
+  animation: floatSlow 4s ease-in-out infinite;
+}
+.auth-float-icon-star {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  background: #FFF8E6;
+  color: #F59E0B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Floating Card 2: Bottom Right Fast Delivery */
+.auth-float-card-2 {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 10px 16px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  color: var(--text-main);
+  animation: floatReverse 4.5s ease-in-out infinite;
+}
+.auth-float-icon-clock {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Left Panel Footer Testimonial / Stats */
+.auth-panel-footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: var(--space-4);
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --------------------------------------------------------------------------
+   RIGHT FORM PANEL (WHITE)
+   -------------------------------------------------------------------------- */
+.auth-panel-right {
+  flex: 1;
+  background: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-8) var(--space-6);
+  position: relative;
+  overflow-y: auto;
+}
+.auth-form-card {
+  width: 100%;
+  max-width: 440px;
+  padding: var(--space-6) 0;
+}
+
+.auth-header {
+  margin-bottom: var(--space-6);
+}
+.auth-header-logo {
+  display: none; /* Shown on mobile when left panel is hidden */
+  margin-bottom: var(--space-4);
+}
+.auth-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  margin-bottom: var(--space-2);
+}
+.auth-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+
+/* Auth Navigation Links */
+.auth-alt-nav {
+  text-align: center;
+  margin-top: var(--space-6);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+.auth-alt-nav a {
+  color: var(--primary);
+  font-weight: var(--font-weight-bold);
+}
+.auth-alt-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Auth Layout */
+@media (max-width: 991px) {
+  .auth-panel-left {
+    display: none;
+  }
+  .auth-header-logo {
+    display: inline-flex;
+  }
+  .auth-panel-right {
+    padding: var(--space-8) var(--space-4);
+  }
+}
